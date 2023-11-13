@@ -3,53 +3,87 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font: 18px/36px 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #6c55e1;
 }
-.Navigation
+.header 
 {
-    background-color: #FF6C22;
-    flex-direction: row;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: white;
-    text-align: left;
-    width: 100%;
-    margin: none;
-    padding: none;
+    background: white;
+    height: 80px;
+    width: 100%;    
 }
 
-.Navigation-Body
+label.icon 
 {
-    font-size: 25px;
+    color: #6c55e1;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
 }
 
-nav li
+.header ul 
+{
+    float: right;
+    margin-right: 20px;
+}
+
+.header ul li 
 {
     display: inline-block;
-    list-style: none;
+    line-height: 80px;
+    margin: 0 5px;
 }
+
+.header ul li a 
+{
+    color: #6c55e1;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+a.main, .header ul li a:hover 
+{
+    background: black;
+    transition: .3s;
+}
+
+#check {
+    display: none;
+}
+
+.checkbut
+{
+    display: none;
+}
+
+/*allow us*/
+.Navigation-Body p
+{
+    margin: 20px;
+    text-align: center;
+    font-size: 45px;
+}
+
+
 
 /* Anggota*/
 .body
 {
-    background-color: #FFD099;
+    background-color: white;
 }
 
 .Anggota
 {
     padding: 20px;
-    background-color: #FFD099;
+    background-image: linear-gradient(white, #6c55e1);
     display: flex;
     flex-direction:row;
     image-resolution: 100px;
-}
-
-.Anggota1
-{
-    flex-direction:column;
-    padding: 20px;
-    background-color: #FF6C22;
-    margin: 5px;
-    flex: 20%;
-    border-radius: 20px;
+    text-align: left;
 }
 
 img
@@ -59,56 +93,85 @@ img
     border-radius: 20px;
 }
 
+.Anggota1
+{
+    flex-direction:column;
+    padding: 20px;
+    background-color: white;
+    margin: 5px;
+    flex: 20%;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #6c55e1;
+    border-width: 5px;
+}
+
 .Anggota2
 {
     flex-direction:column;
     padding: 20px;
-    background-color: #FF6C22;
+    background-color: white;
     margin: 5px;
     flex: 20%;
     border-radius: 20px;
+    border-style: solid;
+    border-color: #6c55e1;
+    border-width: 5px;
 }
 
 .Anggota3
 {
     flex-direction:column;
     padding: 20px;
-    background-color: #FF6C22;
+    background-color: white;
     margin: 5px;
     flex: 20%;
     border-radius: 20px;
+    border-style: solid;
+    border-color: #6c55e1;
+    border-width: 5px;
 }
-
 .Anggota4
 {
     flex-direction:column;
     padding: 20px;
-    background-color: #FF6C22;
+    background-color: white;
     margin: 5px;
     flex: 20%;
     border-radius: 20px;
+    border-style: solid;
+    border-color: #6c55e1;
+    border-width: 5px;
 }
 
 .Anggota5
 {
     flex-direction:column;
     padding: 20px;
-    background-color: #FF6C22;
+    background-color: white;
     margin: 5px;
     flex: 20%;  
     border-radius: 20px;
+    border-style: solid;
+    border-color: #6c55e1;
+    border-width: 5px;
 }
 
 /* Penutup*/
 .footer
 {
     width: auto;
-    height: 30px;
-    background-color: #FF6C22;
+    height: 90px;
+    background-color: #6c55e1;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
     font-size: 15px;
     display: block;
+    box-sizing: border-box;
+}
+
+.footer h1
+{
     color: white;
 }
 
@@ -127,7 +190,7 @@ img
 
     .Anggota
     {
-        flex-wrap: wrap;
+        flex-direction: column;
     }
 }
 
@@ -145,6 +208,6 @@ img
 
     .Anggota
     {
-        flex-wrap: none;
+        flex-direction: row;
     }
 }
